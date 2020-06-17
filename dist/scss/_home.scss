@@ -1,0 +1,274 @@
+.main {
+
+     // hero section
+     section.hero {
+          padding: 0 .1rem;
+
+          .hero-inner {
+               margin-top: 11vh;
+
+               &-note {
+                    &-link {
+                         margin: 1.2rem 0;
+                         padding: .4rem .8rem;
+                         background: $light-1;
+                         border-radius: 6px;
+                         box-shadow: 1px 1px 6px rgba($black-1, .4);
+
+                         span {
+                              position: relative;
+
+                              &:first-child {
+                                   padding: 0 2rem;
+                                   margin: 0 .5rem;
+
+                                   &::after {
+                                        content: '';
+                                        position: absolute;
+                                        top : 15%; right: 0;
+                                        height: 17px;
+                                        width: 1px;
+                                        background: rgba($black-1, .2);
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+     }
+
+
+
+
+
+     // bunny section
+     section.bunny {
+          margin-top: 10rem;
+          padding-top: 3rem;
+          background: $light-2;
+
+          .bunny-inner {
+               background: $light-1;
+
+               &-story {
+                    padding: 1rem 4rem;
+
+                    &__h3 {
+                         font-weight: 700;
+                    }
+
+                    &__p {
+                         font-size: 15px;
+                         color: rgba($black-1, .6);
+                    }
+               }
+          }
+     }
+
+
+
+     // graph section
+     section.graph {
+
+          .graph-inner {
+               margin: 4rem auto;
+               padding: 0 3rem;
+          }
+
+          .graph-flex {
+               padding-bottom: 3.5rem;
+          }
+
+          .graph-numb {
+               &__child {
+
+                    h3 {
+                         color: $light-red;
+                         line-height: 5px;
+                    }
+
+                    span {
+                         text-transform: uppercase;
+                         font-size: 8px;
+                         font-weight: 600;
+                    }
+               }
+          }
+     }
+
+
+
+
+
+     // spon section
+     section.spon {
+           
+          .spon-inner {
+               margin: 3rem auto 5rem auto;
+               padding: 0 3rem;
+          }
+
+
+          .spon-head {
+               &-note {
+
+                    a {
+                         line-height: 0;
+                         font-size: 12px;
+                         text-decoration: underline;
+                         color: $link-blue;
+                    }
+               }
+          }
+
+          .spon-list {
+               &__ul {
+                    padding: 4rem 0;
+               }
+
+               &__li {
+                    color: rgba($black-1, .3);
+               }
+          }
+          
+     }
+
+
+
+
+     // perk section
+     section.perk {
+
+          .perk-inner {
+               margin: 5rem auto;
+               padding: 0 2rem;
+
+               .perk-head {
+                    font-weight: bolder;
+                    padding-bottom: 4.5rem;
+               }
+
+
+               .perk-body {
+                    position: relative;
+                    padding-bottom: 4rem;
+                    
+                    &-list {
+                         
+                         &__child {
+                              border-radius: 8px;
+                              box-shadow: 1px 1px 6px rgba($black-1, .2);
+                              width: 100%;
+
+                              img {
+                                   border-top-left-radius: 8px;
+                                   border-top-right-radius: 8px;
+                              }
+
+                              .perk-kid {
+                                   padding: 2rem;
+                                   padding-bottom: 1rem;
+
+                                   &__note {
+                                        font-size: 12.5px;
+                                        color: rgba($black-1, .5)
+                                   }
+                              }
+                         }
+                    }
+
+
+                    &::after {
+                         content: '';
+                         position: absolute;
+                         bottom: 0; left: 1.5%;
+                         height: 1px;
+                         width: 88vw;
+                         background: rgba($black-1, .3);
+                    }
+               }
+
+
+               .perk-note {
+                    margin: 4rem 0;
+
+                    &-child {
+                         padding-left: 1.3rem;
+
+                         p {
+                              color: rgba($black-1, .5)
+                         }
+                    }
+               }
+          }
+     }
+
+
+
+
+
+
+
+     // edge section
+     section.edge {
+
+          .edge-inner {
+               padding: 0 3rem;
+
+               .edge-head {
+                    padding-bottom: 4rem;
+               }
+
+               .edge-body {
+                    padding: 0 1rem;
+
+                    &-child {
+                         border: 1px solid rgba($black-1, .1);
+                         padding: 1rem 2rem;
+
+                         .edge-child {
+                              &__note {
+                                   padding-bottom: 4rem;
+
+                                   h6 {
+                                        line-height: 3px;
+                                   }
+
+                                   span {
+                                        color: rgba($black-1, .5);
+                                        font-size: 14px;
+                                   }
+                              }
+
+                              &__link {
+                                   font-size: 12px;
+
+                                   a {
+                                        color: rgba($black-1, .5);
+                                   }
+                              }
+                         }
+
+
+                         &:hover {
+                              border: none;
+                              box-shadow: 1px 1px 10px rgba($black-1, .2);
+
+                              .edge-child__note {
+                                   h6 {
+                                        color: $link-blue;
+                                   }
+                              }
+
+                              .edge-child__link {
+                                   a {
+                                        color: $link-blue;
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}
+

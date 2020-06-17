@@ -1,0 +1,111 @@
+header {
+
+     .header-main {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 2.9rem 0;
+
+          // first section
+          &-logo {
+               width: 50px;
+               
+               img {
+                    width: 100%;
+               }
+          }
+
+
+          // Items section
+          &-items {
+               text-transform: uppercase;
+               font-size: 13px;
+
+               &__ul {
+                    position: relative;
+
+                    &:first-child {
+                         padding-right: 1.3rem;
+                    }
+
+                    &:last-child {
+                         padding-left: 1.3rem;
+
+                         &::after {
+                              content: '';
+                              position: absolute;
+                              left: 0; top: 18%;
+                              height: 22px;
+                              width: 2px;
+                              background: rgba($black-1, .1);
+                         }
+                    }
+
+                    .btnLike {
+                         text-transform: initial;
+                         padding-left: 2.4rem;
+                         padding-right: 2.4rem;
+                         border-radius: 5px;
+                         cursor: pointer;
+                         border: 1px solid $light-1;
+
+                         a {
+                              &:hover {
+                                   &::after {
+                                        background: transparent;
+                                   }
+                              }
+                         }
+
+                         &:hover {
+                              background: $light-1;
+                              
+                              a {
+                                   color: $black-1;
+                              }
+                         }
+                    }
+               }
+               
+               
+               // li
+               &__li {
+                    padding: .3rem 1.1rem;
+                    line-height: 1.5rem;
+               }
+               
+
+               // links 
+               &__link {
+                    position: relative;
+                    color: $light-1;
+
+                    &:hover {
+                         text-decoration: none;
+                         color: $light-1;
+
+                         &::after {
+                              position: absolute;
+                              content: '';
+                              height: 3px;
+                              width: 100%;
+                              background: $light-1;
+                              bottom: -70%; left: 0;
+                         }
+                    }
+               }
+          }
+     }
+
+
+
+     &::before {
+          content: '';
+          position: absolute;
+          top: 0; left: 0;
+          z-index: -1;
+          height: 100vh;
+          width: 100vw;
+          background: $hero;
+     }
+}

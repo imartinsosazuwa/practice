@@ -1,0 +1,28 @@
+// Custom scss
+@import 'custom';
+
+
+
+// menu scss
+@import 'menu';
+
+
+
+// Home scss
+@import 'home';
+
+
+
+
+body {
+     overflow-x: hidden;
+}
+
+
+li {
+     list-style: none;
+}
+
+a {
+     color: $black-1;
+}

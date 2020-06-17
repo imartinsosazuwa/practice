@@ -1,0 +1,34 @@
+
+// General
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+
+
+
+// colors
+$black-1: #000;
+$light-1: #fff;
+$light-2: #eee;
+$hero: #cec7bd;
+$light-red: #e62929;
+$link-blue: #0084ff;
+
+
+
+
+// Custom designs
+.journal {
+     &-Head {
+          padding: .3rem 0
+     }
+
+     &-Body {
+          font-size: 14px;
+          color: rgba($black-1, .5);
+          margin-right: 5.5rem;
+     }
+}

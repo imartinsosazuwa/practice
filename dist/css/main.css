@@ -1,0 +1,344 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.journal-Head {
+  padding: .3rem 0;
+}
+
+.journal-Body {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 5.5rem;
+}
+
+header .header-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.9rem 0;
+}
+
+header .header-main-logo {
+  width: 50px;
+}
+
+header .header-main-logo img {
+  width: 100%;
+}
+
+header .header-main-items {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+header .header-main-items__ul {
+  position: relative;
+}
+
+header .header-main-items__ul:first-child {
+  padding-right: 1.3rem;
+}
+
+header .header-main-items__ul:last-child {
+  padding-left: 1.3rem;
+}
+
+header .header-main-items__ul:last-child::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 18%;
+  height: 22px;
+  width: 2px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+header .header-main-items__ul .btnLike {
+  text-transform: initial;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+header .header-main-items__ul .btnLike a:hover::after {
+  background: transparent;
+}
+
+header .header-main-items__ul .btnLike:hover {
+  background: #fff;
+}
+
+header .header-main-items__ul .btnLike:hover a {
+  color: #000;
+}
+
+header .header-main-items__li {
+  padding: .3rem 1.1rem;
+  line-height: 1.5rem;
+}
+
+header .header-main-items__link {
+  position: relative;
+  color: #fff;
+}
+
+header .header-main-items__link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .header-main-items__link:hover::after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  bottom: -70%;
+  left: 0;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background: #cec7bd;
+}
+
+.main section.hero {
+  padding: 0 .1rem;
+}
+
+.main section.hero .hero-inner {
+  margin-top: 11vh;
+}
+
+.main section.hero .hero-inner-note-link {
+  margin: 1.2rem 0;
+  padding: .4rem .8rem;
+  background: #fff;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.main section.hero .hero-inner-note-link span {
+  position: relative;
+}
+
+.main section.hero .hero-inner-note-link span:first-child {
+  padding: 0 2rem;
+  margin: 0 .5rem;
+}
+
+.main section.hero .hero-inner-note-link span:first-child::after {
+  content: '';
+  position: absolute;
+  top: 15%;
+  right: 0;
+  height: 17px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.main section.bunny {
+  margin-top: 10rem;
+  padding-top: 3rem;
+  background: #eee;
+}
+
+.main section.bunny .bunny-inner {
+  background: #fff;
+}
+
+.main section.bunny .bunny-inner-story {
+  padding: 1rem 4rem;
+}
+
+.main section.bunny .bunny-inner-story__h3 {
+  font-weight: 700;
+}
+
+.main section.bunny .bunny-inner-story__p {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main section.graph .graph-inner {
+  margin: 4rem auto;
+  padding: 0 3rem;
+}
+
+.main section.graph .graph-flex {
+  padding-bottom: 3.5rem;
+}
+
+.main section.graph .graph-numb__child h3 {
+  color: #e62929;
+  line-height: 5px;
+}
+
+.main section.graph .graph-numb__child span {
+  text-transform: uppercase;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.main section.spon .spon-inner {
+  margin: 3rem auto 5rem auto;
+  padding: 0 3rem;
+}
+
+.main section.spon .spon-head-note a {
+  line-height: 0;
+  font-size: 12px;
+  text-decoration: underline;
+  color: #0084ff;
+}
+
+.main section.spon .spon-list__ul {
+  padding: 4rem 0;
+}
+
+.main section.spon .spon-list__li {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main section.perk .perk-inner {
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+
+.main section.perk .perk-inner .perk-head {
+  font-weight: bolder;
+  padding-bottom: 4.5rem;
+}
+
+.main section.perk .perk-inner .perk-body {
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+.main section.perk .perk-inner .perk-body-list__child {
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.main section.perk .perk-inner .perk-body-list__child img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.main section.perk .perk-inner .perk-body-list__child .perk-kid {
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+
+.main section.perk .perk-inner .perk-body-list__child .perk-kid__note {
+  font-size: 12.5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main section.perk .perk-inner .perk-body::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 1.5%;
+  height: 1px;
+  width: 88vw;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.main section.perk .perk-inner .perk-note {
+  margin: 4rem 0;
+}
+
+.main section.perk .perk-inner .perk-note-child {
+  padding-left: 1.3rem;
+}
+
+.main section.perk .perk-inner .perk-note-child p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main section.edge .edge-inner {
+  padding: 0 3rem;
+}
+
+.main section.edge .edge-inner .edge-head {
+  padding-bottom: 4rem;
+}
+
+.main section.edge .edge-inner .edge-body {
+  padding: 0 1rem;
+}
+
+.main section.edge .edge-inner .edge-body-child {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+}
+
+.main section.edge .edge-inner .edge-body-child .edge-child__note {
+  padding-bottom: 4rem;
+}
+
+.main section.edge .edge-inner .edge-body-child .edge-child__note h6 {
+  line-height: 3px;
+}
+
+.main section.edge .edge-inner .edge-body-child .edge-child__note span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.main section.edge .edge-inner .edge-body-child .edge-child__link {
+  font-size: 12px;
+}
+
+.main section.edge .edge-inner .edge-body-child .edge-child__link a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main section.edge .edge-inner .edge-body-child:hover {
+  border: none;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main section.edge .edge-inner .edge-body-child:hover .edge-child__note h6 {
+  color: #0084ff;
+}
+
+.main section.edge .edge-inner .edge-body-child:hover .edge-child__link a {
+  color: #0084ff;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+}
+/*# sourceMappingURL=main.css.map */
